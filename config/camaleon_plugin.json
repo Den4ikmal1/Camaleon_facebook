@@ -1,0 +1,26 @@
+{
+  "title": "Facebook",
+  "descr": "login with facebook",
+  "key": "facebook",
+  "version": "0.1",
+  "helpers": [
+    "Plugins::Facebook::MainHelper"
+  ],
+   "options": [  ],
+  "hooks": {
+    "on_active": [
+      "facebook_on_active"
+    ],
+    "on_inactive": [
+      "facebook_on_inactive"
+    ],
+    "user_login_form": [
+      "my_function_for_extra_login"
+    ],
+     "nav_menu_custom": [
+      "my_function_for_menu"
+    ]
+
+    //here you can add all your hooks (read documentation)
+  }
+}

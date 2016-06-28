@@ -1,0 +1,8 @@
+<div id="user_nav">
+  <% if cama_current_user %>
+    Signed in as <strong><%= cama_current_user.email %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+  <% end %>
+</div>
